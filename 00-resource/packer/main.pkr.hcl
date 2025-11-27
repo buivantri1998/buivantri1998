@@ -36,7 +36,7 @@ build {
     script = "scripts/cleanup.sh"
   }
 
-  post-processor "manifest" {
-    output = "packer-manifest.json"
-  }
+  // post-processor "manifest" {
+  //   output = "packer-manifest.json"
+  // }
 }
