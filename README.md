@@ -16,3 +16,13 @@ Here are some ideas to get you started:
 -->
 
 I'm working on it.
+
+- Foundations blueprint
+- Immutable Infra (VM-based, K8s-based)
+- Blue/Green deployment
+- Infra as Code
+- oneClick to new environment
+- Cost optimization
+- Platform engineering, build platform for internal developer
+- Observability and monitoring
+- Platform automation, Ansible automation platform
