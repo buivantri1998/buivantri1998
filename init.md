@@ -27,3 +27,5 @@ git config --global user.name "Tri Bui"
 packer init gcp_nginx.pkr.hcl
 packer validate gcp_nginx.pkr.hcl
 packer build gcp_nginx.pkr.hcl
+
+gcloud compute images delete packer-nginx-1764228177
