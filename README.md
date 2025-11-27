@@ -26,3 +26,5 @@ I'm working on it.
 - Platform engineering, build platform for internal developer
 - Observability and monitoring
 - Platform automation, Ansible automation platform
+
+I'm testing on it.
