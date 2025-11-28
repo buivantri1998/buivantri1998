@@ -6,13 +6,13 @@ gcloud services enable cloudresourcemanager.googleapis.com
 gcloud services enable container.googleapis.com
 
 
-project=user-hilqeryglwqo
+project=user-hgsffypsjrgd
 user=buivantri1998@outlook.com
 gcloud projects add-iam-policy-binding $project \
   --member="user:$user" \
   --role="roles/editor"
 
-project=user-hilqeryglwqo
+project=user-hgsffypsjrgd
 gcloud config set project $project
 
 gcloud compute instances create test-vm --machine-type e2-micro --zone=us-central1-a
@@ -24,8 +24,13 @@ gcloud container clusters delete hello-cluster --region us-central1
 git config --global user.email "tri.bui@tribui.com"
 git config --global user.name "Tri Bui"
 
-packer init gcp_nginx.pkr.hcl
-packer validate gcp_nginx.pkr.hcl
-packer build gcp_nginx.pkr.hcl
+packer init main.pkr.hcl
+packer validate main.pkr.hcl
+packer build main.pkr.hcl
 
-gcloud compute images delete packer-nginx-1764228177
+terraform init
+terraform plan
+terraform apply --auto-approve
+terraform destroy --auto-approve
+
+gcloud compute images delete packer-nginx-1764299997

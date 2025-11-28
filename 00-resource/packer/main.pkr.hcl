@@ -9,7 +9,7 @@ packer {
 
 
 source "googlecompute" "nginx" {
-  project_id        = "user-jvvafnaemxwf"
+  project_id        = "user-hgsffypsjrgd"
   source_image_family = "debian-12"
   zone              = "asia-southeast1-b"
   machine_type      = "e2-medium"
